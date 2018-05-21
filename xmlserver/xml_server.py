@@ -11,7 +11,7 @@ def ping():
 
 
 # server = SimpleXMLRPCServer(('localhost', 9000), requestHandler=RequestHandler, allow_none=True)
-server = SimpleXMLRPCServer(('localhost', 9000))
+server = SimpleXMLRPCServer(('0.0.0.0', 9000))
 server.register_introspection_functions()
 server.register_function(pow)
 server.register_function(ping)
